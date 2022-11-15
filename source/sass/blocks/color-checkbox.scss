@@ -1,0 +1,40 @@
+.color-checkbox {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 23px;
+}
+
+.color-checkbox__title {
+    @include color-title;
+    margin-bottom: 25px;
+}
+
+.color-checkbox__control-label {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    padding-left: 61px;
+}
+
+.color-checkbox__control-mark{
+    position: absolute;
+    left: 0px;
+    top: -5px;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #444444;
+}
+
+.color-checkbox__input:checked + .color-checkbox__checkbox-button::before{
+    position: absolute;
+    content: url(../img/checkbox-arrow.svg);
+    bottom: 4px;
+    left: 4px;
+}
+
+.color-checkbox__label{
+    position: relative;
+}
