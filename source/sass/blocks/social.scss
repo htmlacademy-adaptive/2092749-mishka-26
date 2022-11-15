@@ -1,0 +1,22 @@
+.social__list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 31px;
+    padding-bottom: 28px;
+    border-bottom: solid #E5E5E5;
+}
+
+.social__icon{
+    fill: #231F20; 
+}
+
+.social__icon:hover{
+    fill: #dd651f;
+  }
+
+
+  
