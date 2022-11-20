@@ -1,0 +1,77 @@
+.modal-radio-button {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 31px 0 62px 60px;
+    column-gap: 85px;
+
+    @include tablet {
+        //   border: 1px solid #D9D9D9;
+        //   padding: 25px 0 29px 28px;
+    }
+}
+
+.modal-radio-button__title {
+    @include color-title;
+}
+
+.modal-radio-button__label {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    position: relative;
+}
+
+.modal-radio-button__control-mark {
+    position: absolute;
+    left: -60px;
+    top: -113px;
+    width: 82px;
+    height: 52px;
+    border: 2px solid #63D1BB;
+    // @include tablet {
+    //   width: 40px;
+    //   height: 40px;
+    //   left: -1px;
+    //   top: -11px;
+    // }
+}
+
+.modal-radio-button__control-mark:active{
+    border: 2px solid #ff085a;
+}
+
+.modal-radio-button__control-mark:focus{
+    border: 2px solid #000000;
+
+}
+
+.modal-radio-button__radio[type="radio"]:checked+.modal-radio-button__control-mark::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+
+    @include tablet {
+        width: 18px;
+        height: 18px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+.modal-radio-button__control-mark--s::before{
+    position: absolute;
+    content: "S";
+    width: 11px;
+    height: 1px;
+    top: 0px;
+    right: 26px;
+
+}

@@ -3,4 +3,16 @@
     display: block;
     margin-top: 22px;
     margin-bottom: 10px;
+
+    @include tablet{
+        margin: 0;
+    }
+}
+
+.header{
+    @include tablet{
+        padding-left: 50px;
+        padding-right: 50px;
+        min-height: 89px;
+    }
 }
