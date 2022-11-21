@@ -31,6 +31,10 @@
 .nav__item {
   padding: 28px 0 26px 76px;
   border-top: solid #E6E6E6;
+
+  @include tablet{
+    border-top: none;
+  }
 }
 
 .nav__item:nth-child(3) {
@@ -48,8 +52,10 @@
     position: absolute;
     top: -68px;
     right: -23px;
+    padding-right: 50px;
   }
 }
+
 
 .nav__toggle {
   display: block;
@@ -157,7 +163,7 @@
     line-height: 24px;
     color: #444444;
     position: absolute;
-    right: -26px;
-    top: 31px;
+    right: 23px;
+    top: 26px;
   }
 }

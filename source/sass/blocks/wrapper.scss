@@ -1,0 +1,41 @@
+.wrapper {
+    @include tablet {
+        width: 334px;
+        padding: 25px 168px 34px 36px;
+        background-color: #63D1BB;
+    }
+}
+
+.wrapper:nth-child(2) {
+    @include tablet {
+        background-color: #56C3B2;
+
+    }
+}
+
+.wrapper__link {
+    text-decoration: none;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: #62f010;
+
+    @include tablet {
+        color: #FFFFFF;
+    }
+}
+
+.wrapper::before {
+    @include tablet{
+    position: absolute;
+    content: "";
+    background-image: url(../img/zigzag-fill-desktop.svg.svg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 83px;
+    left: 0;
+}
+}

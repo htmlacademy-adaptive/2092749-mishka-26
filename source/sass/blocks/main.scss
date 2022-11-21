@@ -1,4 +1,35 @@
-.main{
+.main {
     padding-left: 30px;
     padding-right: 30px;
+    // background-image: url("../img/hero-desktop 2.jpg");
+    background-position: 0 10px;
+    background-repeat: no-repeat;
+
+    @include tablet {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.main__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    margin: 0;
+    text-align: center;
+
+    @include tablet {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 43px;
+        line-height: 50px;
+        margin-bottom: 372px;
+    }
+}
+
+.main__container{
+    @include tablet{
+        margin-bottom: 51px;
+    }
 }

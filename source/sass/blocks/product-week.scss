@@ -1,24 +1,41 @@
-.product-week{
+.product-week {
     padding-bottom: 73px;
 }
 
 .product-week__title {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
     margin: 0;
     margin-bottom: 3.5px;
+
+    @include tablet {
+        font-size: 43px;
+        line-height: 50px;
+        margin: 0;
+        margin-right: 105px;
+        white-space: nowrap;
+    }
 }
 
 .product-week__signboard {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     color: #63D1BB;
     margin: 0;
     text-transform: uppercase;
     margin-bottom: 17.5px;
+
+    @include tablet {
+        margin: 0;
+        padding-top: 10px;
+        line-height: 17px;
+        padding-right: 6px;
+    }
 
 }
 
@@ -29,4 +46,34 @@
     color: #444444;
     margin: 0;
     padding-bottom: 28px;
+
+    @include tablet {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+
+.product-week__discription {
+    @include tablet {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+}
+
+.product-week__wrapper {
+    @include tablet {
+        display: flex;
+        margin-bottom: 37px;
+    }
+}
+
+.product-week__container {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 292px auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 42px;
+    }
 }
