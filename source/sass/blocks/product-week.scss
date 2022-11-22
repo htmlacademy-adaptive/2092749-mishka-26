@@ -1,5 +1,10 @@
 .product-week {
     padding-bottom: 73px;
+
+    @include tablet{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .product-week__title {

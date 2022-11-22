@@ -21,9 +21,9 @@
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle  toggle nav__toggle--active" type="button" aria-label="открыть меню"></button>
       <ul class="nav__list nav__item--active">
-        <li class="nav__item"><a class="nav__link" href="./index.html">Каталог товров</a></li>
-        <li class="nav__item"><a class="nav__link" href="./catalog.html">Вязание на заказ</a></li>
-        <li class="nav__item"><a class="nav__link nav__link--tablet" href="./form.html">Поиск по сайту</a></li>
+        <li class="nav__item"><a class="nav__link" href="./catalog.html">Каталог товров</a></li>
+        <li class="nav__item"><a class="nav__link" href="./form.html">Вязание на заказ</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--tablet" href="#">Поиск по сайту</a></li>
         <li class="nav__item"><a class="nav__link" href=".#">Корзина: пока пуста</a></li>
       </ul>
       <p class="nav__delivery">Бесплатная доставка по России</p>
@@ -86,7 +86,7 @@
         <button class="reviews__button reviews__button-next" type="button"
           aria-label="Посмотреть следущий отзыв"></button>
       </div>
-      <button class="button" type="button" aria-label="Написать">Написать</button>
+      <button class="reviews__button-write button" type="button" aria-label="Написать">Написать</button>
     </div>
     <section class="main__contacts contacts">
       <h2 class="contacts__title">Контакты</h2>
@@ -155,12 +155,14 @@
     </div>
     <div class="modal modal__container modal__container-close">
       <div class="modal__wrapper">
+        <button class="modal__button-close" type="submit"
+          onclick="document.querySelector('.modal__container').classList.add('modal__container-close')">
+          <svg class="icon-close" width="13" height="13" role="img" aria-label="Закрыть." viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+        </button>
 
         <h2 class="modal-title">Добавить<br> в корзину</h2>
         <p class="modal__text">Выберите размер:</p>
 
-        <!-- <button class="button-find other-button" type="submit"
-          onclick="document.querySelector('.modal__container').classList.add('modal__container-close')">Найтfffи</button> -->
 
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__radio-button modal-radio-button">

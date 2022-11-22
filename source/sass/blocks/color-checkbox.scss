@@ -5,6 +5,15 @@
     flex-direction: column;
     row-gap: 23px;
     padding-bottom: 33px;
+
+    @include tablet{
+        background-color: #f1f1f1;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .color-checkbox__title {
@@ -18,6 +27,10 @@
     font-size: 17px;
     line-height: 18px;
     padding-left: 61px;
+
+    @include tablet{
+        padding-left: 207px;
+    }
 }
 
 .color-checkbox__control-mark{
@@ -27,6 +40,11 @@
     width: 38px;
     height: 38px;
     border: 2px solid #444444;
+
+    @include tablet{
+        left: 148px;
+        top: -7px;
+    }
 }
 
 .color-checkbox__input:checked + .color-checkbox__checkbox-button::before{

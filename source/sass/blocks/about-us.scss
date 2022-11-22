@@ -1,27 +1,51 @@
+.about-us{
+ 
+    @include tablet{
+        padding-left: 50px;
+        padding-right: 50px;
+        }
+}
+
 .about-us__title {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 25px;
     line-height: 30px;
     margin: 0;
     margin-bottom: 82px;
+
 }
 
 .about-us__list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 70px;
+        row-gap: 110px;
+    }
 }
 
 .about-us__item {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 22px;
+        width: 235px;
+        // margin-right: 172px;
+    }
 }
 
-.about-us__item:not(:last-child){
+.about-us__item:not(:last-child) {
     margin-bottom: 83px;
 }
 
-.about-us__item:last-child{
+.about-us__item:last-child {
     margin-bottom: 58px;
 }
