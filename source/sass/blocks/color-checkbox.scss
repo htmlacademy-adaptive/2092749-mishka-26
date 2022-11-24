@@ -9,10 +9,12 @@
     @include tablet{
         background-color: #f1f1f1;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 222px auto;
         grid-template-rows: auto auto auto;
         margin: 0;
         padding: 0;
+        padding-bottom: 80px;
+
     }
 }
 
@@ -30,6 +32,9 @@
 
     @include tablet{
         padding-left: 207px;
+        position: absolute;
+        top: -38px;
+        left: 8px;
     }
 }
 
@@ -43,7 +48,7 @@
 
     @include tablet{
         left: 148px;
-        top: -7px;
+        top: -49px;
     }
 }
 
@@ -56,4 +61,5 @@
 
 .color-checkbox__label{
     position: relative;
+    margin-bottom: 28px;
 }

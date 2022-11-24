@@ -15,4 +15,8 @@
 
 .catalog__container{
     padding: 30px 30px 58px 30px;
+
+    @include tablet{
+        padding: 0;
+    }
 }

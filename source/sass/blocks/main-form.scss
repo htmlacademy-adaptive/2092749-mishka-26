@@ -11,11 +11,13 @@
     padding: 152px 0 73px 0;
     background-color: #F1F1F1;
     margin: 0;
+    padding: 0;
 
     @include tablet {
         font-size: 43px;
         line-height: 50px;
         text-align: center;
+        margin-bottom: 141px;
     }
 }
 
@@ -30,5 +32,6 @@
     @include tablet {
         font-size: 17px;
         line-height: 30px;
+        margin-bottom: 63px;
     }
 }

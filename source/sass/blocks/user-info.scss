@@ -14,6 +14,10 @@
     line-height: 18px;
     display: flex;
     flex-direction: column;
+
+    @include tablet{
+        padding-left: 100px;
+    }
 }
 
 .user-info__input {
