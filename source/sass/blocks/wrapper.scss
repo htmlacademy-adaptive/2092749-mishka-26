@@ -4,6 +4,10 @@
         padding: 25px 168px 34px 36px;
         background-color: #63D1BB;
     }
+
+    @include desktop{
+       width: 525px; 
+    }
 }
 
 .wrapper:nth-child(2) {

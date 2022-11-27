@@ -26,10 +26,17 @@
         line-height: 50px;
         margin-bottom: 372px;
     }
+
+    @include desktop {
+        font-size: 53px;
+        line-height: 57px;
+        padding: 114px 225px 0 225px;
+        margin-bottom: 335px;
+    }
 }
 
-.main__container{
-    @include tablet{
+.main__container {
+    @include tablet {
         margin-bottom: 51px;
     }
 }

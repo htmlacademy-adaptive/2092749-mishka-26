@@ -1,9 +1,12 @@
-.about-us{
- 
-    @include tablet{
+.about-us {
+
+    @include tablet {
         padding-left: 50px;
         padding-right: 50px;
-        }
+    }
+    @include desktop{
+        padding: 68px 227px 90px 225px;
+    }
 }
 
 .about-us__title {
@@ -13,6 +16,15 @@
     margin: 0;
     margin-bottom: 82px;
 
+    @include tablet {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    @include desktop {
+        font-size: 53px;
+        line-height: 57px;
+    }
 }
 
 .about-us__list {
@@ -21,10 +33,61 @@
     margin: 0;
 
     @include tablet {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto;
+        row-gap: 111px;
         column-gap: 70px;
-        row-gap: 110px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // column-gap: 70px;
+        // row-gap: 110px;
+    }
+    @include desktop{
+        // column-gap: 115px;
+    }
+}
+
+.about-us__item--eco{
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+.about-us__item--style{
+
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+.about-us__item--like{
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+.about-us__item--love{
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+
+.about-us__item--russia{
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+.about-us__item--package{
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 }
 
@@ -44,8 +107,16 @@
 
 .about-us__item:not(:last-child) {
     margin-bottom: 83px;
+
+    @include tablet{
+        margin: 0;
+    }
 }
 
 .about-us__item:last-child {
     margin-bottom: 58px;
+
+    @include tablet{
+        margin-bottom: 83px;
+    }
 }

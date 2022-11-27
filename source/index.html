@@ -21,10 +21,12 @@
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle  toggle nav__toggle--active" type="button" aria-label="открыть меню"></button>
       <ul class="nav__list nav__item--active">
-        <li class="nav__item"><a class="nav__link" href="./catalog.html">Каталог товров</a></li>
+        <li class="nav__item"><a class="nav__link" href="./catalog.html">Каталог товаров</a></li>
         <li class="nav__item"><a class="nav__link" href="./form.html">Вязание на заказ</a></li>
         <li class="nav__item"><a class="nav__link nav__link--tablet" href="#">Поиск по сайту</a></li>
         <li class="nav__item"><a class="nav__link" href=".#">Корзина: пока пуста</a></li>
+        <li class="nav__item"><a class="nav__link" href=".#">Новые поступления</a></li>
+        <li class="nav__item"><a class="nav__link" href=".#">Распродажа</a></li>
       </ul>
       <p class="nav__delivery">Бесплатная доставка по России</p>
     </nav>
@@ -33,10 +35,10 @@
     <h1 class="main__title">Милые штуки ручной работы для дома</h1>
     <div class="main__container container">
       <div class="container__wrapper wrapper">
-        <a class="wrapper__link" href="#">Предметы интерьера</a>
+        <a class="wrapper__link" href="#">Предметы<br> интерьера</a>
       </div>
       <div class="main__wrapper wrapper">
-        <a class="wrapper__link" href="#">Детские игрушки</a>
+        <a class="wrapper__link" href="#">Детские <br>игрушки</a>
       </div>
     </div>
     <section class="main__product-week product-week">
@@ -45,33 +47,33 @@
         <h3 class="product-week__signboard">Товар недели</h3>
       </div>
       <div class="product-week__container">
-      <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
-        размерах.</p>
-      <div class="product-week__discription discription">
-        <div class="discription__wrapper ">
-          <p class="discription__color discription-table">Цвет:</p>
-          <p class="discription__value-color discription-table">тиффани/серый:</p>
-          <p class="discription__diameter discription-table">Диаметр:</p>
-          <p class="discription__value-diameter discription-table">25 см</p>
-          <p class="discription__height discription-table">Высота:</p>
-          <p class="discription__value-height discription-table">15 см</p>
+        <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+          размерах.</p>
+        <div class="product-week__discription discription">
+          <div class="discription__wrapper ">
+            <p class="discription__color discription-table">Цвет:</p>
+            <p class="discription__value-color discription-table">тиффани/серый:</p>
+            <p class="discription__diameter discription-table">Диаметр:</p>
+            <p class="discription__value-diameter discription-table">25 см</p>
+            <p class="discription__height discription-table">Высота:</p>
+            <p class="discription__value-height discription-table">15 см</p>
+          </div>
         </div>
-      </div>
-      <img class="discription__img" src="#" alt="Вязанные корзинки трех размеров">
-      <p class="discription__price">Цена: 990 руб.</p>
-      <button class="discription__button button" type="button" aria-label="Заказать"
-        onclick="document.querySelector('.modal__container').classList.remove('modal__container-close')">Заказать</button>
+        <img class="discription__img" src="#" alt="Вязанные корзинки трех размеров">
+        <p class="discription__price">Цена: 990 руб.</p>
+        <button class="discription__button button" type="button" aria-label="Заказать"
+          onclick="document.querySelector('.modal__container').classList.remove('modal__container-close')">Заказать</button>
       </div>
     </section>
     <div class="main__about-us about-us">
       <h3 class="about-us__title">Коротко о нас:</h3>
       <ul class="about-us__list">
-        <li class="about-us__item">Экологически чистые материалы</li>
-        <li class="about-us__item">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item">Поддержка отечественного производителя</li>
-        <li class="about-us__item">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
+        <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item about-us__item--love">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item about-us__item--russia">Поддержка отечественного производителя</li>
+        <li class="about-us__item about-us__item--package">Поставляется в подарочной упаковке</li>
       </ul>
     </div>
     <div class="main__reviews reviews">
@@ -157,7 +159,11 @@
       <div class="modal__wrapper">
         <button class="modal__button-close" type="submit"
           onclick="document.querySelector('.modal__container').classList.add('modal__container-close')">
-          <svg class="icon-close" width="13" height="13" role="img" aria-label="Закрыть." viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+          <svg class="icon-close" width="13" height="13" role="img" aria-label="Закрыть." viewBox="0 0 13 13"
+            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </svg>
         </button>
 
         <h2 class="modal-title">Добавить<br> в корзину</h2>
