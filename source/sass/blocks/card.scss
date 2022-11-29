@@ -13,6 +13,10 @@
         flex-direction: inherit;
         padding-bottom: 54px;
     }
+
+    @include desktop{
+        flex-direction: column;
+    }
 }
 
 .card__img {

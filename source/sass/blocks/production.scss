@@ -1,8 +1,10 @@
 .production {
+    display: flex;
+    flex-direction: column;
 
-    @include tablet {
-        display: flex;
-        flex-direction: column;
+    @include desktop {
+        flex-direction: initial;
+padding: 57px 50px 105px 50px;
     }
 }
 
@@ -13,6 +15,7 @@
     line-height: 24px;
     padding: 21px 13px 0 91px;
     margin-bottom: 26px;
+    order: -1;
 
     @include tablet {
         font-size: 20px;
@@ -20,8 +23,14 @@
         padding-top: 0;
         padding-left: 107px;
         margin-bottom: 24px;
+        order: initial;
     }
 
+    @include desktop{
+        padding-left: 78px;
+        padding-top: 78px;
+        margin-bottom: 27px;
+    }
 }
 
 .production__video {
@@ -56,6 +65,10 @@
         padding-right: 67px;
         margin-bottom: 40px;
     }
+
+    @include desktop{
+        padding-right: 40px;
+    }
 }
 
 .production__button {
@@ -71,11 +84,15 @@
         line-height: 16px;
         margin-bottom: 110px;
     }
+
+    @include desktop{
+        min-width: 230px;
+    }
 }
 
 .production__container {
     @include tablet {
-        order: -1;
+        // order: -1;
         margin-bottom: 41px;
     }
 }

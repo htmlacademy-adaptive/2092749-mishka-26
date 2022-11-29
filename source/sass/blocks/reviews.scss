@@ -93,4 +93,15 @@
     border: 1px solid #ECECEC;
     background-color: #FFFFFF;
     margin-bottom: 38px;
+    @include tablet{
+        border: none;
+    }
+}
+
+.reviews__arrow:hover{
+    opacity: 0.6;
+}
+
+.reviews__arrow:active{
+    opacity: 0.3;
 }
