@@ -1,0 +1,46 @@
+.discription {
+    @include font;
+
+}
+
+.discription__wrapper {
+    display: grid;
+    grid-template-columns: 97px 162px;
+    grid-template-rows: auto auto auto;
+
+    @include desktop {
+        margin-bottom: 124px;
+    }
+}
+
+.discription__color {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.discription__value-color {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.discription-table {
+    margin: 0;
+}
+
+.discription__price {
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+
+    @include tablet {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+}
+
+.discription__button {
+    @include tablet {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+}

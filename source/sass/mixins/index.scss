@@ -1,0 +1,28 @@
+@mixin tablet {
+  @media screen and (min-width: $width-tablet) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media screen and (min-width: $width-desktop) {
+    @content;
+  }
+}
+
+@mixin font {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}
+
+@mixin color-title {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63D1BB;
+  text-transform: uppercase;
+}

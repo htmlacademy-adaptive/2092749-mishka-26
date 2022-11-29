@@ -1,0 +1,40 @@
+.catalog__wrapper {
+    background-color: #F1F1F1;
+}
+
+.catalog__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-top: 73px;
+    padding-bottom: 73px;
+
+    @include tablet {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    @include desktop {
+        font-size: 53px;
+        line-height: 57px;
+    }
+}
+
+.catalog__container {
+    padding: 30px 30px 58px 30px;
+
+    @include tablet {
+        padding: 0;
+    }
+}
+
+.catalog__box{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    row-gap: 20px;
+    padding: 111px 50px 57px 50px;
+}

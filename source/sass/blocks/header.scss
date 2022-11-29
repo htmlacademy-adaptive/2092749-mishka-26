@@ -1,0 +1,28 @@
+.header__logo {
+    margin: 0 auto;
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 10px;
+
+    @include tablet {
+        margin: 0;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+
+    @include desktop {
+        margin: 0 auto;
+        position: absolute;
+        left: 602px;
+        top: 24px;
+        z-index: 2;
+    }
+}
+
+.header {
+    @include tablet {
+        padding-left: 50px;
+        padding-right: 50px;
+        min-height: 89px;
+    }
+}

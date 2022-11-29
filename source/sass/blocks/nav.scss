@@ -1,0 +1,187 @@
+.nav {
+  position: relative;
+  // width: auto;
+  // min-height: 79px;
+}
+
+.nav__link {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__link--tablet{
+
+  @include tablet{
+    color: #ffffff;
+  }
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  display: none;
+
+
+  @include tablet {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
+.nav__item {
+  padding: 28px 0 26px 76px;
+  border-top: solid #E6E6E6;
+
+  @include tablet{
+    border-top: none;
+  }
+}
+
+.nav__item:nth-child(3) {
+
+  @include tablet {
+    position: absolute;
+    top: -71px;
+    right: 217px;
+  }
+
+  @include desktop{
+    position: initial;
+  }
+}
+
+.nav__item:nth-child(4) {
+
+  @include tablet {
+    position: absolute;
+    top: -68px;
+    right: -23px;
+    padding-right: 50px;
+  }
+  @include desktop{
+    position: initial;
+  }
+}
+
+
+.nav__toggle {
+  display: block;
+  position: absolute;
+  top: -37px;
+  right: 10px;
+  width: 23px;
+  height: 22px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 20px;
+  height: 2px;
+  background-color: #231F20;
+  box-shadow: 0 4px 0 0 #231F20, 0 8px 0 0 #231F20;
+
+}
+
+.nav__list--opened .nav__toggle--active {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 21px;
+    height: 2px;
+    background-color: #000000;
+    ;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.nav__list--opened .nav__list {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background-color: #ffffff;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.nav__toggle--active {
+  position: absolute;
+  z-index: 5;
+}
+
+.nav__list--opened .nav__list {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  background-color: #ffffff;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+
+
+.nav__delivery {
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    position: absolute;
+    right: 23px;
+    top: 26px;
+  }
+
+  @include desktop{
+    right: -1px;
+    top: 58px;
+  }
+}
+
+.nav__item:nth-child(n+5){
+  display: none;
+
+  @include desktop{
+    display: initial;
+  }
+}

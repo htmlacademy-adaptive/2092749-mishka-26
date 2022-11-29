@@ -1,0 +1,95 @@
+.card {
+    border: 1px solid #ECECEC;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include tablet {
+        margin: 0;
+        padding: 0;
+        flex-direction: inherit;
+        padding-bottom: 54px;
+    }
+
+    @include desktop{
+        flex-direction: column;
+    }
+}
+
+.card__img {
+    margin-bottom: 27px;
+}
+
+.card__title {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 6px;
+    padding-left: 28px;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 34px;
+        padding-top: 27px;
+    }
+}
+
+.card__discription {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    color: #444444;
+    margin: 0;
+    margin-bottom: 41px;
+    padding-left: 28px;
+
+    @include tablet {
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 194px;
+        padding-left: 34px;
+    }
+}
+
+.card__discription::after {
+    position: absolute;
+    content: "";
+    width: 204px;
+    height: 1px;
+    background-color: #ECECEC;
+    top: 123px;
+    right: 26px;
+}
+
+.card__price {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 28px;
+
+    @include tablet {
+        font-size: 17px;
+        padding-left: 34px;
+    }
+}
+
+.card__foto {
+    width: 100%;
+
+    @include tablet {
+        max-width: 334px;
+        height: auto;
+    }
+
+    @include desktop {
+        max-width: 316px;
+        height: auto;
+    }
+}
